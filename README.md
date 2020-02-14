@@ -13,16 +13,22 @@ npm install --save windmill-scream
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
+import './styles/tailwind.css';
 
-import MyComponent from 'windmill-scream'
+import {
+    Button,
+    TextInput,
+    SelectInput,
+    SelectOption,
+    Checkbox,
+    RadioButton
+} from 'windmill-scream';
 
-class Example extends React.Component {
-  render () {
+const Example: FunctionComponent = () => {
     return (
-      <MyComponent />
-    )
-  }
+        <Button onClick={() => console.log('thanks!')}>Click me</Button>
+    );
 }
 ```
 
