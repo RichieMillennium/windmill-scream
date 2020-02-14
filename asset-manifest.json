@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/windmill-scream/static/css/main.170d4deb.chunk.css",
+    "main.js": "/windmill-scream/static/js/main.99df63a8.chunk.js",
+    "main.js.map": "/windmill-scream/static/js/main.99df63a8.chunk.js.map",
+    "runtime-main.js": "/windmill-scream/static/js/runtime-main.54ced3ee.js",
+    "runtime-main.js.map": "/windmill-scream/static/js/runtime-main.54ced3ee.js.map",
+    "static/css/2.764ccc25.chunk.css": "/windmill-scream/static/css/2.764ccc25.chunk.css",
+    "static/js/2.63580d9f.chunk.js": "/windmill-scream/static/js/2.63580d9f.chunk.js",
+    "static/js/2.63580d9f.chunk.js.map": "/windmill-scream/static/js/2.63580d9f.chunk.js.map",
+    "index.html": "/windmill-scream/index.html",
+    "precache-manifest.a975c5d1cc5f3458bd8bf38961d8aae1.js": "/windmill-scream/precache-manifest.a975c5d1cc5f3458bd8bf38961d8aae1.js",
+    "service-worker.js": "/windmill-scream/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/windmill-scream/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.170d4deb.chunk.css.map": "/windmill-scream/static/css/main.170d4deb.chunk.css.map",
+    "static/js/2.63580d9f.chunk.js.LICENSE.txt": "/windmill-scream/static/js/2.63580d9f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54ced3ee.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.63580d9f.chunk.js",
+    "static/css/main.170d4deb.chunk.css",
+    "static/js/main.99df63a8.chunk.js"
+  ]
+}
