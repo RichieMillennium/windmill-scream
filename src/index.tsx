@@ -2,22 +2,13 @@
  * @class ExampleComponent
  */
 
-import * as React from 'react'
+import './styles/main.css';
 
-import styles from './styles.css'
-
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export * from './components/Classy.model';
+export * from './components/common.model';
+export * from './components/Button';
+export * from './components/Checkbox';
+export * from './components/Header';
+export * from './components/RadioButton';
+export * from './components/SelectInput';
+export * from './components/TextInput';
