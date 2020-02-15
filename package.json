@@ -84,6 +84,5 @@
     "rollup-plugin-typescript2": "^0.25.3",
     "tailwindcss": "^1.2.0",
     "typescript": "^3.7.5"
-  },
-  "files": [ "./dist" ]
+  }
 }
