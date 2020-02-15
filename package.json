@@ -16,11 +16,11 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
     "test:watch": "react-scripts-ts test --env=jsdom",
-    "prepare": "git status",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "dist:publish": "./scripts/build.sh && ./scripts/publish.sh"
   },
   "eslintConfig": {
     "extends": [
@@ -83,8 +83,5 @@
     "rollup-plugin-typescript2": "^0.25.3",
     "tailwindcss": "^1.2.0",
     "typescript": "^3.7.5"
-  },
-  "files": [
-    "dist"
-  ]
+  }
 }
