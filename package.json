@@ -1,6 +1,6 @@
 {
   "name": "windmill-scream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of Tailwind CSS / Emotion / React components",
   "author": "RichieMillennium",
   "license": "MIT",
@@ -16,9 +16,9 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
     "test:watch": "react-scripts-ts test --env=jsdom",
+    "prepare": "git status",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
