@@ -1,13 +1,36 @@
 import React, { Component } from 'react'
 import './styles/tailwind.css';
+import styled from '@emotion/styled';
 
-import { Button, Header, TextInput, SelectInput, SelectOption, Checkbox, RadioButton } from 'windmill-scream';
+import { Button, Header, HeaderGroup, HeaderItem, TextInput, SelectInput, SelectOption, Checkbox, RadioButton } from 'windmill-scream';
+
+const IconImage = styled.img`
+  filter: saturate(4 invert(4));
+`;
 
 export default class App extends Component {
   render () {
+    const handleGithub = () => {
+      window.open('https://github.com/RichieMillennium/windmill-scream', '_blank');
+    };
     return (
       <React.Fragment>
-        <Header title={<h1 className="text-2xl font-extrabold">Windmill Scream Demo</h1>} />
+        <Header title={<h1 className="text-2xl font-extrabold">Windmill Scream Demo</h1>}>
+          <HeaderGroup floatRight={true}>
+            <HeaderItem>
+              <Button trim={true} transparent={true} onClick={handleGithub}>
+                GitHub
+                <svg className="fill-current float-right ml-2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24">
+                  <path
+                    d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41zM17 14a1 1 0 0 1 2 0v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h5a1 1 0 0 1 0 2H5v12h12v-5z"/>
+                </svg>
+              </Button>
+            </HeaderItem>
+          </HeaderGroup>
+        </Header>
         <div className="container mx-auto mt-4 flex flex-col">
           <div className="md:flex h-12 align-bottom">
             <h2 className="text-xl font-bold">Buttons</h2>
