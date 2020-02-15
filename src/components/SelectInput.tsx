@@ -1,18 +1,8 @@
 import * as React from 'react';
 import 'tailwindcss';
-import { Color } from './common.model';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
-
-export const SelectOption: React.FunctionComponent<Classy> = ({
-  className,
-  children,
-  ...props
-}) => (
-  <option className={`text-lg ${className}`} {...props}>
-    {children}
-  </option>
-);
+import { Color } from './Color.model';
 
 const FocusSelect = styled.select`
   :focus {
@@ -20,7 +10,7 @@ const FocusSelect = styled.select`
   }
 `;
 
-interface ISelectInput extends Classy {
+export interface ISelectInput extends Classy {
   title: string;
   color?: Color;
   bgColor?: Color;
@@ -68,3 +58,5 @@ export const SelectInput: React.FunctionComponent<ISelectInput> = ({
     </div>
   );
 };
+
+export default SelectInput;

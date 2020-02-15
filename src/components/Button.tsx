@@ -1,8 +1,8 @@
 import * as React from 'react';
 import 'tailwindcss';
-import { Color } from './common.model';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
+import { Color } from './Color.model';
 
 interface IButton extends Classy {
   color?: Color;
@@ -44,3 +44,5 @@ export const Button: React.FunctionComponent<IButton> = ({
     />
   );
 };
+
+export default Button;

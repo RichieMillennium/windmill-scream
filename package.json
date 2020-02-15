@@ -1,6 +1,6 @@
 {
   "name": "windmill-scream",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of Tailwind CSS / Emotion / React components",
   "author": "RichieMillennium",
   "license": "MIT",
@@ -80,8 +80,10 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-postcss": "^2.0.6",
+    "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript2": "^0.25.3",
     "tailwindcss": "^1.2.0",
     "typescript": "^3.7.5"
-  }
+  },
+  "files": [ "./dist" ]
 }

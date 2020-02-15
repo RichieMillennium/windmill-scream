@@ -1,19 +1,3 @@
-export type Color =
-  | 'gray'
-  | 'blue'
-  | 'teal'
-  | 'green'
-  | 'yellow'
-  | 'orange'
-  | 'red'
-  | 'pink'
-  | 'indigo'
-  | 'purple'
-  | 'primary'
-  | 'secondary'
-  | 'neutral'
-  | 'transparent';
-
 export type Width =
   | 'full'
   | '1/2'
@@ -38,3 +22,5 @@ export type Width =
   | '10/12'
   | '11/12'
   | number;
+
+export default Width;

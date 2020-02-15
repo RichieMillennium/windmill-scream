@@ -1,8 +1,8 @@
 import * as React from 'react';
 import 'tailwindcss';
-import { Color } from './common.model';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
+import { Color } from './Color.model';
 
 const FocusLabel = styled.label`
   :focus-within {
@@ -52,3 +52,5 @@ export const RadioButton: React.FunctionComponent<IRadioButton> = ({
     </FocusLabel>
   );
 };
+
+export default RadioButton;

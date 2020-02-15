@@ -1,8 +1,8 @@
 import * as React from 'react';
 import 'tailwindcss';
-import { Color } from './common.model';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
+import { Color } from './Color.model';
 
 const FocusInput = styled.input`
   :focus {
@@ -10,7 +10,7 @@ const FocusInput = styled.input`
   }
 `;
 
-interface ITextInput extends Classy {
+export interface ITextInput extends Classy {
   title: string;
   color?: Color;
   bgColor?: Color;
@@ -42,3 +42,5 @@ export const TextInput: React.FunctionComponent<ITextInput> = ({
     </div>
   );
 };
+
+export default TextInput;

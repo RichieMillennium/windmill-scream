@@ -1,8 +1,8 @@
 import * as React from 'react';
 import 'tailwindcss';
-import { Color } from './common.model';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
+import { Color } from './Color.model';
 
 const FocusLabel = styled.label`
   :focus-within {
@@ -16,7 +16,7 @@ const CheckedSvg = styled.svg`
   }
 `;
 
-interface ICheckbox extends Classy {
+export interface ICheckbox extends Classy {
   title: string;
   color?: Color;
   bgColor?: Color;
@@ -52,3 +52,5 @@ export const Checkbox: React.FunctionComponent<ICheckbox> = ({
     </FocusLabel>
   );
 };
+
+export default Checkbox;
