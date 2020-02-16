@@ -1,9 +1,17 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 
 export interface IHeaderGroup {
   floatRight?: boolean;
 }
 
+/***
+ * Children of the Header component
+ * @param floatRight - optional boolean indicating the group floats to the right of the Header
+ * @param children - one or more HeaderItem items
+ * @param props - addition unordered list element props
+ * @constructor
+ */
 export const HeaderGroup: React.FunctionComponent<IHeaderGroup> = ({
   floatRight = false,
   children,
@@ -18,6 +26,10 @@ export const HeaderGroup: React.FunctionComponent<IHeaderGroup> = ({
       {children}
     </ul>
   );
+};
+
+HeaderGroup.propTypes = {
+  floatRight: PropTypes.bool
 };
 
 export default HeaderGroup;

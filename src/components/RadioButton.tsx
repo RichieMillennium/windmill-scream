@@ -1,8 +1,9 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
-import { Color } from './Color.model';
+import { ALL_COLORS, Color } from './Color.model';
 
 const FocusLabel = styled.label`
   :focus-within {
@@ -19,23 +20,33 @@ const CheckedSvg = styled.svg`
 `;
 
 interface IRadioButton extends Classy {
-  title: string;
+  title?: string;
   color?: Color;
   bgColor?: Color;
 }
 
+/***
+ * Tailwind Radio Button
+ * @param title - optional string with text contents of the label
+ * @param color - optional string that matches type Color for the foreground color
+ * @param bgColor - optional string that matches type Color for the background color
+ * @param className - optional string
+ * @param props - additional input element props (checked, disabled, name, value, etc)
+ * @constructor
+ */
 export const RadioButton: React.FunctionComponent<IRadioButton> = ({
-  title,
+  title = '',
   color,
   bgColor,
   className = '',
   ...props
 }) => {
   const useColor: Color = color || 'primary';
+  const bgClass = bgColor ? `bg-${bgColor}-200` : 'bg-white';
   return (
     <FocusLabel className={`${className} flex justify-start items-center`}>
       <div
-        className={`bg-white border rounded-full text-${useColor}-500 border-${useColor}-500 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 cursor-pointer focus-within:bg-${useColor}-400`}
+        className={`${bgClass} border rounded-full text-${useColor}-500 border-${useColor}-500 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 cursor-pointer focus-within:bg-${useColor}-400`}
       >
         <input type="radio" {...props} className="opacity-0 absolute" />
         <CheckedSvg
@@ -51,6 +62,17 @@ export const RadioButton: React.FunctionComponent<IRadioButton> = ({
       </div>
     </FocusLabel>
   );
+};
+
+RadioButton.propTypes = {
+  title: PropTypes.string,
+  color: PropTypes.oneOf<Color>(ALL_COLORS),
+  bgColor: PropTypes.oneOf<Color>(ALL_COLORS),
+  className: PropTypes.string,
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+  name: PropTypes.string,
+  value: PropTypes.string
 };
 
 export default RadioButton;

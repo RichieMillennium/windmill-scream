@@ -1,8 +1,9 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
-import { Color } from './Color.model';
+import { ALL_COLORS, Color } from './Color.model';
 
 const FocusSelect = styled.select`
   :focus {
@@ -11,13 +12,23 @@ const FocusSelect = styled.select`
 `;
 
 export interface ISelectInput extends Classy {
-  title: string;
+  title?: string;
   color?: Color;
   bgColor?: Color;
 }
 
+/***
+ * Tailwind Select Input
+ * @param title - optional string with text contents of the label
+ * @param color - optional string that matches type Color for the foreground color
+ * @param bgColor - optional string that matches type Color for the background color
+ * @param className - optional string
+ * @param children - one or more SelectOption items
+ * @param props - additional select element props (name, disabled, etc)
+ * @constructor
+ */
 export const SelectInput: React.FunctionComponent<ISelectInput> = ({
-  title,
+  title = '',
   color,
   bgColor,
   className = '',
@@ -57,6 +68,15 @@ export const SelectInput: React.FunctionComponent<ISelectInput> = ({
       </label>
     </div>
   );
+};
+
+SelectInput.propTypes = {
+  title: PropTypes.string,
+  color: PropTypes.oneOf<Color>(ALL_COLORS),
+  bgColor: PropTypes.oneOf<Color>(ALL_COLORS),
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  name: PropTypes.string
 };
 
 export default SelectInput;

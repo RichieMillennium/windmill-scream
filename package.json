@@ -1,6 +1,6 @@
 {
   "name": "windmill-scream",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of Tailwind CSS / Emotion / React components",
   "author": "RichieMillennium",
   "license": "MIT",
@@ -72,6 +72,7 @@
     "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^3.3.1",

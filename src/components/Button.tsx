@@ -1,8 +1,9 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
-import { Color } from './Color.model';
+import { Color, ALL_COLORS } from './Color.model';
 
 interface IButton extends Classy {
   color?: Color;
@@ -18,10 +19,11 @@ const FocusButton = styled.button`
 
 /**
  * Tailwind button
- * @param color - optional string
- * @param transparent - optional boolean
- * @param className - if specified, should include hover:bg-COLOR-500 text-COLOR-500 border-COLOR-500
- * @param props
+ * @param color - optional string that matches type Color
+ * @param slim - optional boolean that uses slimmer styles if true
+ * @param transparent - optional boolean that uses a transparent background if true
+ * @param className - optional string
+ * @param props - additional button element props (disabled, name, onClick, etc)
  * @constructor
  */
 export const Button: React.FunctionComponent<IButton> = ({
@@ -33,16 +35,30 @@ export const Button: React.FunctionComponent<IButton> = ({
 }) => {
   const useColor: Color = color || 'primary';
   const colorClasses =
-    className ||
+    !className?.match(/text-[a-z]+-[0-9]+/) &&
     `hover:bg-${useColor}-500 text-${useColor}-500 border-${useColor}-500`;
   const bgClasses = transparent ? ' bg-transparent' : ' bg-contrast';
-  const sizeClasses = slim ? 'py-0 font-medium' : 'py-2 font-semibold';
+  const needsHeight = !className?.match(/(^|\W)h-[0-9a0z]+/);
+  const sizeClasses = slim
+    ? `py-0 font-medium ${needsHeight ? 'h-full' : ''}`
+    : `py-2 font-semibold ${needsHeight ? 'h-auto' : ''}`;
   return (
     <FocusButton
+      role="button"
       {...props}
-      className={`${colorClasses} ${bgClasses} hover:text-contrast text-lg leading-relaxed ${sizeClasses} px-4 border hover:border-transparent rounded mr-2`}
+      className={`${className} ${colorClasses} ${bgClasses} hover:text-contrast text-lg leading-relaxed ${sizeClasses} px-4 border hover:border-transparent rounded mr-2`}
     />
   );
+};
+
+Button.propTypes = {
+  color: PropTypes.oneOf<Color>(ALL_COLORS),
+  slim: PropTypes.bool,
+  transparent: PropTypes.bool,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  name: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 export default Button;

@@ -1,8 +1,9 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
-import { Color } from './Color.model';
+import { ALL_COLORS, Color } from './Color.model';
 
 const FocusInput = styled.input`
   :focus {
@@ -11,13 +12,22 @@ const FocusInput = styled.input`
 `;
 
 export interface ITextInput extends Classy {
-  title: string;
+  title?: string;
   color?: Color;
   bgColor?: Color;
 }
 
+/***
+ * Tailwind Text Input
+ * @param title - optional string with text contents of the label
+ * @param color - optional string that matches type Color for the foreground color
+ * @param bgColor - optional string that matches type Color for the background color
+ * @param className - optional string
+ * @param props - additional input element props (disabled, name, value, etc)
+ * @constructor
+ */
 export const TextInput: React.FunctionComponent<ITextInput> = ({
-  title,
+  title = '',
   color,
   bgColor,
   className = '',
@@ -41,6 +51,16 @@ export const TextInput: React.FunctionComponent<ITextInput> = ({
       </label>
     </div>
   );
+};
+
+TextInput.propTypes = {
+  title: PropTypes.string,
+  color: PropTypes.oneOf<Color>(ALL_COLORS),
+  bgColor: PropTypes.oneOf<Color>(ALL_COLORS),
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  name: PropTypes.string,
+  value: PropTypes.string
 };
 
 export default TextInput;

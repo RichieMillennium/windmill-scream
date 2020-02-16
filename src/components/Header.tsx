@@ -1,9 +1,16 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 
 export interface IHeader {
   title: any;
 }
 
+/***
+ * Tailwind Header
+ * @param title - required string or element containing the application title
+ * @param children - one or more HeaderGroup items
+ * @constructor
+ */
 export const Header: React.FunctionComponent<IHeader> = ({
   title,
   children
@@ -41,6 +48,10 @@ export const Header: React.FunctionComponent<IHeader> = ({
       </div>
     </nav>
   );
+};
+
+Header.propTypes = {
+  title: PropTypes.any.isRequired
 };
 
 export default Header;

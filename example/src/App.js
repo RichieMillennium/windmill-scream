@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 import './styles/tailwind.css';
-import styled from '@emotion/styled';
 
 import { Button, Header, HeaderGroup, HeaderItem, TextInput, SelectInput, SelectOption, Checkbox, RadioButton } from 'windmill-scream';
-
-const IconImage = styled.img`
-  filter: saturate(4 invert(4));
-`;
 
 export default class App extends Component {
   render () {
@@ -18,7 +13,7 @@ export default class App extends Component {
         <Header title={<h1 className="text-2xl font-extrabold">Windmill Scream Demo</h1>}>
           <HeaderGroup floatRight={true}>
             <HeaderItem>
-              <Button trim={true} transparent={true} onClick={handleGithub}>
+              <Button transparent={true} onClick={handleGithub}>
                 GitHub
                 <svg className="fill-current float-right ml-2"
                   viewBox="0 0 24 24"
@@ -43,10 +38,10 @@ export default class App extends Component {
               <Button color="red">Red Button</Button>
             </div>
             <div className="md:w-1/4">
-              <Button trim={true} color="green">Slim Green Button</Button>
+              <Button className="h-10" slim={true} color="green">Slim Green Button</Button>
             </div>
             <div className="md:w-1/4">
-              <Button trim={true} color="secondary">Secondary Button</Button>
+              <Button className="h-8" slim={true} color="secondary">Slimmer Secondary Button</Button>
             </div>
           </div>
           <div className="md:flex h-12">
@@ -57,7 +52,7 @@ export default class App extends Component {
               <TextInput color="teal" title="Teal Input" name="input1" placeholder="Type here" className="w-10/12 h-12" />
             </div>
             <div className="md:w-1/4">
-              <TextInput color="blue" title="Blue Input" name="input2" placeholder="Type something" className="w-10/12 h-12" />
+              <TextInput color="blue" bgColor="blue" title="Blue Input" name="input2" placeholder="Type something" className="w-10/12 h-12" />
             </div>
             <div className="md:w-1/4">
               <SelectInput color="gray" title="Gray Select" className="w-10/12 h-12">
@@ -69,7 +64,7 @@ export default class App extends Component {
               </SelectInput>
             </div>
             <div className="md:w-1/4">
-              <SelectInput color="orange" title="Orange Select" className="w-10/12 h-12">
+              <SelectInput defaultValue="Option C" color="orange" bgColor="yellow" title="Orange and Yellow Select" className="w-10/12 h-12">
                 <SelectOption>Option A</SelectOption>
                 <SelectOption>Option B</SelectOption>
                 <SelectOption>Option C</SelectOption>
@@ -92,6 +87,20 @@ export default class App extends Component {
             </div>
             <div className="md:w-1/4">
               <RadioButton title="Radio 3" name="radioDemo" value="3" className="w-10/12" />
+            </div>
+          </div>
+          <div className="md:flex h-20">
+            <div className="md:w-1/4">
+              <Checkbox title="Don't click here" color="gray" bgColor="gray" disabled={true} defaultChecked={true} />
+            </div>
+            <div className="md:w-1/4">
+              <RadioButton title="Radio A" name="colorDemo" value="a" color="indigo" bgColor="indigo" />
+            </div>
+            <div className="md:w-1/4">
+              <RadioButton title="Radio B default" name="colorDemo" value="b" color="pink" bgColor="pink" defaultChecked={true} />
+            </div>
+            <div className="md:w-1/4">
+              <RadioButton title="Radio C disabled" name="colorDemo" value="c" color="gray" bgColor="gray" disabled={true} />
             </div>
           </div>
         </div>

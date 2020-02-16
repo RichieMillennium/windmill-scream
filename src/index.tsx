@@ -2,8 +2,6 @@
  * @class ExampleComponent
  */
 
-import './styles/main.css';
-
 export { Classy } from './components/Classy.model';
 export { default as Color } from './components/Color.model';
 export { default as Width } from './components/Width.model';
