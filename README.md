@@ -8,6 +8,10 @@
 
 ```bash
 npm install --save windmill-scream
+
+or
+
+yarn install windmill-scream
 ```
 
 ## Usage
