@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad2a0741f19767bcef78e305a44bf63b",
+    "revision": "e44a0780e4b06f927aae017057658a8f",
     "url": "/windmill-scream/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/windmill-scream/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "ba4c63cdeac527faf651",
+    "revision": "3b5eb55a23cc4c60b855",
     "url": "/windmill-scream/static/css/main.170d4deb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/windmill-scream/static/js/2.349e0b61.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba4c63cdeac527faf651",
-    "url": "/windmill-scream/static/js/main.ef64a8e3.chunk.js"
+    "revision": "3b5eb55a23cc4c60b855",
+    "url": "/windmill-scream/static/js/main.20fd8ea5.chunk.js"
   },
   {
     "revision": "aa343d2ba347d91a0849",
