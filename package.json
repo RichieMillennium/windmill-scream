@@ -1,6 +1,6 @@
 {
   "name": "windmill-scream",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of Tailwind CSS / Emotion / React components",
   "author": "RichieMillennium",
   "license": "MIT",
@@ -36,8 +36,8 @@
   "dependencies": {},
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "@emotion/core": "^10.0.0",
     "@emotion/styled": "^10.0.0",
     "tailwindcss": "^1.2.0"
@@ -73,8 +73,8 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "^3.3.1",
     "rollup": "^1.31.0",
     "rollup-plugin-commonjs": "^10.1.0",

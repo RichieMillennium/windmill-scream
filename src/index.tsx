@@ -8,6 +8,7 @@ export { default as Width } from './components/Width.model';
 
 export { default as Button } from './components/Button';
 export { default as Checkbox } from './components/Checkbox';
+export { default as DropDown, DropDownOption } from './components/DropDown';
 export { default as Header } from './components/Header';
 export { default as HeaderGroup } from './components/HeaderGroup';
 export { default as HeaderItem } from './components/HeaderItem';

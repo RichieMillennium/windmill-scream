@@ -1,18 +1,18 @@
 {
   "name": "windmill-scream-example",
   "homepage": "https://RichieMillennium.github.io/windmill-scream",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "^3.3.1",
     "tailwindcss": "^1.2.0",
-    "windmill-scream": "^1.0.3"
+    "windmill-scream": "^1.0.4"
   },
   "scripts": {
     "build:style": "postcss src/styles/index.css -o src/styles/tailwind.css",
