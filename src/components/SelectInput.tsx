@@ -2,14 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
-import styled from '@emotion/styled';
 import { ALL_COLORS, Color } from './Color.model';
-
-const FocusSelect = styled.select`
-  :focus {
-    outline: 4px solid highlight;
-  }
-`;
 
 export interface ISelectInput extends Classy {
   title?: string;
@@ -45,12 +38,12 @@ export const SelectInput: React.FunctionComponent<ISelectInput> = ({
         className={`z-20 pt-4 pl-3 w-full leading-tight text-xs text-${useColor}-500 mt-2 cursor-text`}
       >
         {title}
-        <FocusSelect
+        <select
           {...props}
-          className={`absolute left-0 w-full z-30 bg-transparent font-medium text-lg text-gray-800 border rounded border-${useColor}-500 appearance-none h-full px-3 pt-5 pb-1`}
+          className={`absolute left-0 w-full z-30 bg-transparent font-medium text-lg text-gray-800 border rounded border-${useColor}-500 appearance-none h-full px-3 pt-5 pb-1 focus:outline-none focus:shadow-outline`}
         >
           {children}
-        </FocusSelect>
+        </select>
         <div
           className={`absolute right-0 -mt-2 pointer-events-none absolute pin-y pin-r flex items-center px-2 text-${useColor}-500`}
         >

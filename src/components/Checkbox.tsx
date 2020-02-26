@@ -5,12 +5,6 @@ import { Classy } from './Classy.model';
 import styled from '@emotion/styled';
 import { ALL_COLORS, Color } from './Color.model';
 
-const FocusLabel = styled.label`
-  :focus-within {
-    outline: 4px solid highlight;
-  }
-`;
-
 const CheckedSvg = styled.svg`
   input:checked + & {
     display: block;
@@ -42,7 +36,9 @@ export const Checkbox: React.FunctionComponent<ICheckbox> = ({
   const useColor: Color = color || 'primary';
   const bgClass = bgColor ? `bg-${bgColor}-200` : 'bg-white';
   return (
-    <FocusLabel className={`${className} flex justify-start items-center`}>
+    <label
+      className={`${className} flex justify-start items-center rounded focus-within:outline-none focus-within:shadow-outline`}
+    >
       <div
         className={`${bgClass} border rounded text-${useColor}-500 border-${useColor}-500 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 cursor-pointer focus-within:border-${useColor}-800`}
       >
@@ -60,7 +56,7 @@ export const Checkbox: React.FunctionComponent<ICheckbox> = ({
       <div className="select-none text-lg font-medium text-gray-800">
         {title}
       </div>
-    </FocusLabel>
+    </label>
   );
 };
 

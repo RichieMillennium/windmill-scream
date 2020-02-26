@@ -3894,6 +3894,246 @@ video {
   border-bottom-left-radius: 9999px;
 }
 
+.focus-within\:rounded-none:focus-within {
+  border-radius: 0;
+}
+
+.focus-within\:rounded-sm:focus-within {
+  border-radius: 0.125rem;
+}
+
+.focus-within\:rounded:focus-within {
+  border-radius: 0.25rem;
+}
+
+.focus-within\:rounded-md:focus-within {
+  border-radius: 0.375rem;
+}
+
+.focus-within\:rounded-lg:focus-within {
+  border-radius: 0.5rem;
+}
+
+.focus-within\:rounded-full:focus-within {
+  border-radius: 9999px;
+}
+
+.focus-within\:rounded-t-none:focus-within {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.focus-within\:rounded-r-none:focus-within {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.focus-within\:rounded-b-none:focus-within {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.focus-within\:rounded-l-none:focus-within {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.focus-within\:rounded-t-sm:focus-within {
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+}
+
+.focus-within\:rounded-r-sm:focus-within {
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.focus-within\:rounded-b-sm:focus-within {
+  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.focus-within\:rounded-l-sm:focus-within {
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.focus-within\:rounded-t:focus-within {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.focus-within\:rounded-r:focus-within {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.focus-within\:rounded-b:focus-within {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.focus-within\:rounded-l:focus-within {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.focus-within\:rounded-t-md:focus-within {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.focus-within\:rounded-r-md:focus-within {
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.focus-within\:rounded-b-md:focus-within {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.focus-within\:rounded-l-md:focus-within {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.focus-within\:rounded-t-lg:focus-within {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.focus-within\:rounded-r-lg:focus-within {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.focus-within\:rounded-b-lg:focus-within {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.focus-within\:rounded-l-lg:focus-within {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.focus-within\:rounded-t-full:focus-within {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.focus-within\:rounded-r-full:focus-within {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.focus-within\:rounded-b-full:focus-within {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.focus-within\:rounded-l-full:focus-within {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.focus-within\:rounded-tl-none:focus-within {
+  border-top-left-radius: 0;
+}
+
+.focus-within\:rounded-tr-none:focus-within {
+  border-top-right-radius: 0;
+}
+
+.focus-within\:rounded-br-none:focus-within {
+  border-bottom-right-radius: 0;
+}
+
+.focus-within\:rounded-bl-none:focus-within {
+  border-bottom-left-radius: 0;
+}
+
+.focus-within\:rounded-tl-sm:focus-within {
+  border-top-left-radius: 0.125rem;
+}
+
+.focus-within\:rounded-tr-sm:focus-within {
+  border-top-right-radius: 0.125rem;
+}
+
+.focus-within\:rounded-br-sm:focus-within {
+  border-bottom-right-radius: 0.125rem;
+}
+
+.focus-within\:rounded-bl-sm:focus-within {
+  border-bottom-left-radius: 0.125rem;
+}
+
+.focus-within\:rounded-tl:focus-within {
+  border-top-left-radius: 0.25rem;
+}
+
+.focus-within\:rounded-tr:focus-within {
+  border-top-right-radius: 0.25rem;
+}
+
+.focus-within\:rounded-br:focus-within {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.focus-within\:rounded-bl:focus-within {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.focus-within\:rounded-tl-md:focus-within {
+  border-top-left-radius: 0.375rem;
+}
+
+.focus-within\:rounded-tr-md:focus-within {
+  border-top-right-radius: 0.375rem;
+}
+
+.focus-within\:rounded-br-md:focus-within {
+  border-bottom-right-radius: 0.375rem;
+}
+
+.focus-within\:rounded-bl-md:focus-within {
+  border-bottom-left-radius: 0.375rem;
+}
+
+.focus-within\:rounded-tl-lg:focus-within {
+  border-top-left-radius: 0.5rem;
+}
+
+.focus-within\:rounded-tr-lg:focus-within {
+  border-top-right-radius: 0.5rem;
+}
+
+.focus-within\:rounded-br-lg:focus-within {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.focus-within\:rounded-bl-lg:focus-within {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.focus-within\:rounded-tl-full:focus-within {
+  border-top-left-radius: 9999px;
+}
+
+.focus-within\:rounded-tr-full:focus-within {
+  border-top-right-radius: 9999px;
+}
+
+.focus-within\:rounded-br-full:focus-within {
+  border-bottom-right-radius: 9999px;
+}
+
+.focus-within\:rounded-bl-full:focus-within {
+  border-bottom-left-radius: 9999px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -6500,6 +6740,10 @@ video {
   outline: 0;
 }
 
+.focus-within\:outline-none:focus-within {
+  outline: 0;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -8562,6 +8806,46 @@ video {
 }
 
 .focus\:shadow-none:focus {
+  box-shadow: none;
+}
+
+.focus-within\:shadow-xs:focus-within {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.focus-within\:shadow-sm:focus-within {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.focus-within\:shadow:focus-within {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.focus-within\:shadow-md:focus-within {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.focus-within\:shadow-lg:focus-within {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.focus-within\:shadow-xl:focus-within {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.focus-within\:shadow-2xl:focus-within {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.focus-within\:shadow-inner:focus-within {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.focus-within\:shadow-outline:focus-within {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.focus-within\:shadow-none:focus-within {
   box-shadow: none;
 }
 
@@ -16727,6 +17011,246 @@ body {
     border-bottom-left-radius: 9999px;
   }
 
+  .sm\:focus-within\:rounded-none:focus-within {
+    border-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-sm:focus-within {
+    border-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded:focus-within {
+    border-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-md:focus-within {
+    border-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-lg:focus-within {
+    border-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-full:focus-within {
+    border-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-t-none:focus-within {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-r-none:focus-within {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-b-none:focus-within {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-l-none:focus-within {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-t-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-r-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-b-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-l-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-t:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-r:focus-within {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-b:focus-within {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-l:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-t-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-r-md:focus-within {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-b-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-l-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-t-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-r-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-b-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-l-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-t-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-r-full:focus-within {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-b-full:focus-within {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-l-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-tl-none:focus-within {
+    border-top-left-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-tr-none:focus-within {
+    border-top-right-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-br-none:focus-within {
+    border-bottom-right-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-bl-none:focus-within {
+    border-bottom-left-radius: 0;
+  }
+
+  .sm\:focus-within\:rounded-tl-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-tr-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-br-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-bl-sm:focus-within {
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .sm\:focus-within\:rounded-tl:focus-within {
+    border-top-left-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-tr:focus-within {
+    border-top-right-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-br:focus-within {
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-bl:focus-within {
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .sm\:focus-within\:rounded-tl-md:focus-within {
+    border-top-left-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-tr-md:focus-within {
+    border-top-right-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-br-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-bl-md:focus-within {
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .sm\:focus-within\:rounded-tl-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-tr-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-br-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-bl-lg:focus-within {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .sm\:focus-within\:rounded-tl-full:focus-within {
+    border-top-left-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-tr-full:focus-within {
+    border-top-right-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-br-full:focus-within {
+    border-bottom-right-radius: 9999px;
+  }
+
+  .sm\:focus-within\:rounded-bl-full:focus-within {
+    border-bottom-left-radius: 9999px;
+  }
+
   .sm\:border-solid {
     border-style: solid;
   }
@@ -19333,6 +19857,10 @@ body {
     outline: 0;
   }
 
+  .sm\:focus-within\:outline-none:focus-within {
+    outline: 0;
+  }
+
   .sm\:overflow-auto {
     overflow: auto;
   }
@@ -21395,6 +21923,46 @@ body {
   }
 
   .sm\:focus\:shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .sm\:focus-within\:shadow-xs:focus-within {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .sm\:focus-within\:shadow-sm:focus-within {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .sm\:focus-within\:shadow:focus-within {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .sm\:focus-within\:shadow-md:focus-within {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .sm\:focus-within\:shadow-lg:focus-within {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .sm\:focus-within\:shadow-xl:focus-within {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .sm\:focus-within\:shadow-2xl:focus-within {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .sm\:focus-within\:shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .sm\:focus-within\:shadow-outline:focus-within {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+
+  .sm\:focus-within\:shadow-none:focus-within {
     box-shadow: none;
   }
 
@@ -29555,6 +30123,246 @@ body {
     border-bottom-left-radius: 9999px;
   }
 
+  .md\:focus-within\:rounded-none:focus-within {
+    border-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-sm:focus-within {
+    border-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded:focus-within {
+    border-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-md:focus-within {
+    border-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-lg:focus-within {
+    border-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-full:focus-within {
+    border-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-t-none:focus-within {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-r-none:focus-within {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-b-none:focus-within {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-l-none:focus-within {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-t-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-r-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-b-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-l-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-t:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-r:focus-within {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-b:focus-within {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-l:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-t-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-r-md:focus-within {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-b-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-l-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-t-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-r-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-b-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-l-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-t-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-r-full:focus-within {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-b-full:focus-within {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-l-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-tl-none:focus-within {
+    border-top-left-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-tr-none:focus-within {
+    border-top-right-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-br-none:focus-within {
+    border-bottom-right-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-bl-none:focus-within {
+    border-bottom-left-radius: 0;
+  }
+
+  .md\:focus-within\:rounded-tl-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-tr-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-br-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-bl-sm:focus-within {
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .md\:focus-within\:rounded-tl:focus-within {
+    border-top-left-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-tr:focus-within {
+    border-top-right-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-br:focus-within {
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-bl:focus-within {
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .md\:focus-within\:rounded-tl-md:focus-within {
+    border-top-left-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-tr-md:focus-within {
+    border-top-right-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-br-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-bl-md:focus-within {
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .md\:focus-within\:rounded-tl-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-tr-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-br-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-bl-lg:focus-within {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md\:focus-within\:rounded-tl-full:focus-within {
+    border-top-left-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-tr-full:focus-within {
+    border-top-right-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-br-full:focus-within {
+    border-bottom-right-radius: 9999px;
+  }
+
+  .md\:focus-within\:rounded-bl-full:focus-within {
+    border-bottom-left-radius: 9999px;
+  }
+
   .md\:border-solid {
     border-style: solid;
   }
@@ -32161,6 +32969,10 @@ body {
     outline: 0;
   }
 
+  .md\:focus-within\:outline-none:focus-within {
+    outline: 0;
+  }
+
   .md\:overflow-auto {
     overflow: auto;
   }
@@ -34223,6 +35035,46 @@ body {
   }
 
   .md\:focus\:shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .md\:focus-within\:shadow-xs:focus-within {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .md\:focus-within\:shadow-sm:focus-within {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .md\:focus-within\:shadow:focus-within {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .md\:focus-within\:shadow-md:focus-within {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .md\:focus-within\:shadow-lg:focus-within {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .md\:focus-within\:shadow-xl:focus-within {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .md\:focus-within\:shadow-2xl:focus-within {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .md\:focus-within\:shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .md\:focus-within\:shadow-outline:focus-within {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+
+  .md\:focus-within\:shadow-none:focus-within {
     box-shadow: none;
   }
 
@@ -42383,6 +43235,246 @@ body {
     border-bottom-left-radius: 9999px;
   }
 
+  .lg\:focus-within\:rounded-none:focus-within {
+    border-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-sm:focus-within {
+    border-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded:focus-within {
+    border-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-md:focus-within {
+    border-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-lg:focus-within {
+    border-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-full:focus-within {
+    border-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-t-none:focus-within {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-r-none:focus-within {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-b-none:focus-within {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-l-none:focus-within {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-t-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-r-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-b-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-l-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-t:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-r:focus-within {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-b:focus-within {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-l:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-t-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-r-md:focus-within {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-b-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-l-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-t-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-r-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-b-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-l-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-t-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-r-full:focus-within {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-b-full:focus-within {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-l-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-tl-none:focus-within {
+    border-top-left-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-tr-none:focus-within {
+    border-top-right-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-br-none:focus-within {
+    border-bottom-right-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-bl-none:focus-within {
+    border-bottom-left-radius: 0;
+  }
+
+  .lg\:focus-within\:rounded-tl-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-tr-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-br-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-bl-sm:focus-within {
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .lg\:focus-within\:rounded-tl:focus-within {
+    border-top-left-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-tr:focus-within {
+    border-top-right-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-br:focus-within {
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-bl:focus-within {
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .lg\:focus-within\:rounded-tl-md:focus-within {
+    border-top-left-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-tr-md:focus-within {
+    border-top-right-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-br-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-bl-md:focus-within {
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .lg\:focus-within\:rounded-tl-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-tr-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-br-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-bl-lg:focus-within {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .lg\:focus-within\:rounded-tl-full:focus-within {
+    border-top-left-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-tr-full:focus-within {
+    border-top-right-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-br-full:focus-within {
+    border-bottom-right-radius: 9999px;
+  }
+
+  .lg\:focus-within\:rounded-bl-full:focus-within {
+    border-bottom-left-radius: 9999px;
+  }
+
   .lg\:border-solid {
     border-style: solid;
   }
@@ -44989,6 +46081,10 @@ body {
     outline: 0;
   }
 
+  .lg\:focus-within\:outline-none:focus-within {
+    outline: 0;
+  }
+
   .lg\:overflow-auto {
     overflow: auto;
   }
@@ -47051,6 +48147,46 @@ body {
   }
 
   .lg\:focus\:shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .lg\:focus-within\:shadow-xs:focus-within {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .lg\:focus-within\:shadow-sm:focus-within {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .lg\:focus-within\:shadow:focus-within {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .lg\:focus-within\:shadow-md:focus-within {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .lg\:focus-within\:shadow-lg:focus-within {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .lg\:focus-within\:shadow-xl:focus-within {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .lg\:focus-within\:shadow-2xl:focus-within {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .lg\:focus-within\:shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .lg\:focus-within\:shadow-outline:focus-within {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+
+  .lg\:focus-within\:shadow-none:focus-within {
     box-shadow: none;
   }
 
@@ -55211,6 +56347,246 @@ body {
     border-bottom-left-radius: 9999px;
   }
 
+  .xl\:focus-within\:rounded-none:focus-within {
+    border-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-sm:focus-within {
+    border-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded:focus-within {
+    border-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-md:focus-within {
+    border-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-lg:focus-within {
+    border-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-full:focus-within {
+    border-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-t-none:focus-within {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-r-none:focus-within {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-b-none:focus-within {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-l-none:focus-within {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-t-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-r-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-b-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-l-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-t:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-r:focus-within {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-b:focus-within {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-l:focus-within {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-t-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-r-md:focus-within {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-b-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-l-md:focus-within {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-t-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-r-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-b-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-l-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-t-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-r-full:focus-within {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-b-full:focus-within {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-l-full:focus-within {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-tl-none:focus-within {
+    border-top-left-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-tr-none:focus-within {
+    border-top-right-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-br-none:focus-within {
+    border-bottom-right-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-bl-none:focus-within {
+    border-bottom-left-radius: 0;
+  }
+
+  .xl\:focus-within\:rounded-tl-sm:focus-within {
+    border-top-left-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-tr-sm:focus-within {
+    border-top-right-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-br-sm:focus-within {
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-bl-sm:focus-within {
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .xl\:focus-within\:rounded-tl:focus-within {
+    border-top-left-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-tr:focus-within {
+    border-top-right-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-br:focus-within {
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-bl:focus-within {
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .xl\:focus-within\:rounded-tl-md:focus-within {
+    border-top-left-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-tr-md:focus-within {
+    border-top-right-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-br-md:focus-within {
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-bl-md:focus-within {
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .xl\:focus-within\:rounded-tl-lg:focus-within {
+    border-top-left-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-tr-lg:focus-within {
+    border-top-right-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-br-lg:focus-within {
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-bl-lg:focus-within {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .xl\:focus-within\:rounded-tl-full:focus-within {
+    border-top-left-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-tr-full:focus-within {
+    border-top-right-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-br-full:focus-within {
+    border-bottom-right-radius: 9999px;
+  }
+
+  .xl\:focus-within\:rounded-bl-full:focus-within {
+    border-bottom-left-radius: 9999px;
+  }
+
   .xl\:border-solid {
     border-style: solid;
   }
@@ -57817,6 +59193,10 @@ body {
     outline: 0;
   }
 
+  .xl\:focus-within\:outline-none:focus-within {
+    outline: 0;
+  }
+
   .xl\:overflow-auto {
     overflow: auto;
   }
@@ -59879,6 +61259,46 @@ body {
   }
 
   .xl\:focus\:shadow-none:focus {
+    box-shadow: none;
+  }
+
+  .xl\:focus-within\:shadow-xs:focus-within {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .xl\:focus-within\:shadow-sm:focus-within {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .xl\:focus-within\:shadow:focus-within {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .xl\:focus-within\:shadow-md:focus-within {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .xl\:focus-within\:shadow-lg:focus-within {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .xl\:focus-within\:shadow-xl:focus-within {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .xl\:focus-within\:shadow-2xl:focus-within {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .xl\:focus-within\:shadow-inner:focus-within {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .xl\:focus-within\:shadow-outline:focus-within {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+
+  .xl\:focus-within\:shadow-none:focus-within {
     box-shadow: none;
   }
 

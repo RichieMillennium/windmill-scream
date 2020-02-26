@@ -61,6 +61,24 @@ from the union type `Color`.
   - className - optional string
   - additional input element props (checked, disabled, name, value, etc)
 
+### DropDown
+
+  *props:*
+
+  - title - optional string - text contents of the label
+  - color - optional string - the foreground color
+  - bgColor - optional string - the background color
+  - className - optional string
+  - children - one or more `DropDownOption` items
+  - additional select element props (name, disabled, value, etc)
+
+### DropDownOption
+
+  *props:*
+
+  - children - string content
+  - additional option element props (selected, value, etc)
+
 ### Header
 
   *props:*

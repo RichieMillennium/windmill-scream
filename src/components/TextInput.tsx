@@ -2,14 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
-import styled from '@emotion/styled';
 import { ALL_COLORS, Color } from './Color.model';
-
-const FocusInput = styled.input`
-  :focus {
-    outline: 4px solid highlight;
-  }
-`;
 
 export interface ITextInput extends Classy {
   title?: string;
@@ -43,10 +36,10 @@ export const TextInput: React.FunctionComponent<ITextInput> = ({
         className={`z-20 pt-4 pl-3 w-full leading-tight text-xs text-${useColor}-500 mt-2 cursor-text`}
       >
         {title}
-        <FocusInput
+        <input
           type="text"
           {...props}
-          className={`absolute left-0 w-full z-30 bg-transparent font-medium text-lg text-gray-800 border rounded border-${useColor}-500 appearance-none h-full px-3 pt-5 pb-1`}
+          className={`absolute left-0 w-full z-30 bg-transparent font-medium text-lg text-gray-800 border rounded border-${useColor}-500 appearance-none h-full px-3 pt-5 pb-1 focus:outline-none focus:shadow-outline`}
         />
       </label>
     </div>

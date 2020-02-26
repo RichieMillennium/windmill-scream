@@ -17,6 +17,9 @@ module.exports = {
     },
   },
   variants: {
+    borderRadius: ['responsive', 'focus-within'],
+    boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
+    outline: ['responsive', 'focus', 'focus-within']
   },
   plugins: []
 };

@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import 'tailwindcss';
 import { Classy } from './Classy.model';
-import styled from '@emotion/styled';
 import { Color, ALL_COLORS } from './Color.model';
 
 interface IButton extends Classy {
@@ -10,12 +9,6 @@ interface IButton extends Classy {
   slim?: boolean;
   transparent?: boolean;
 }
-
-const FocusButton = styled.button`
-  :focus {
-    outline: 4px solid highlight;
-  }
-`;
 
 /**
  * Tailwind button
@@ -43,10 +36,10 @@ export const Button: React.FunctionComponent<IButton> = ({
     ? `py-0 font-medium ${needsHeight ? 'h-full' : ''}`
     : `py-2 font-semibold ${needsHeight ? 'h-auto' : ''}`;
   return (
-    <FocusButton
+    <button
       role="button"
       {...props}
-      className={`${className} ${colorClasses} ${bgClasses} hover:text-contrast text-lg leading-relaxed ${sizeClasses} px-4 border hover:border-transparent rounded mr-2`}
+      className={`${className} ${colorClasses} ${bgClasses} hover:text-contrast text-lg leading-relaxed ${sizeClasses} px-4 border hover:border-transparent rounded mr-2 focus:outline-none focus:shadow-outline`}
     />
   );
 };

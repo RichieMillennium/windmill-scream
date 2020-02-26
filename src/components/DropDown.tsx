@@ -34,15 +34,16 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
       setValue(currentValue);
     }
   }, [currentValue]);
-  const toggleOpen = (event: any) => {
-    event.target.blur();
-    event.target.parentNode.focus();
+
+  const toggleOpen = () => {
     setOpen(wasOpen => !wasOpen);
   };
+
   const handleClose = () => {
     setOpen(false);
     return undefined;
   };
+
   const handleSelect = (newValue?: string) => () => {
     setValue(newValue);
     setOpen(false);
@@ -58,8 +59,7 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
         ? React.cloneElement(reactChild, { 'data-selected': true })
         : React.cloneElement(reactChild, { 'data-selected': false })
   );
-
-  const selectedOption: any = selectOptions
+  const selectedOption: React.ReactElement | undefined = selectOptions
     ? selectOptions.find(
         (item: React.ReactElement) => item.props['data-selected']
       )
@@ -73,6 +73,7 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
   const bgClass =
     useBgColor === useColor ? `bg-${useBgColor}-100` : `bg-${useBgColor}-200`;
   const selectBorder = open ? 'rounded-b-none' : '';
+
   return (
     <div className={`${className} rounded ${bgClass} mb-4 relative`}>
       {open && (
@@ -87,12 +88,12 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
         {title}
         <button
           title={value}
-          className={`absolute inset-0 pl-3 pr-4 pt-5 pb-1 text-left truncate w-full font-medium text-lg ${textColorClass} bg-transparent border rounded ${selectBorder} border-${useColor}-500 appearance-none`}
+          className={`absolute inset-0 pl-3 pr-4 pt-5 pb-1 text-left truncate w-full font-medium text-lg ${textColorClass} bg-transparent border rounded ${selectBorder} border-${useColor}-500 appearance-none focus:outline-none focus:shadow-outline`}
           onClick={toggleOpen}
         >
           {selectedValue || props.placeholder}
         </button>
-        <select {...props} className="hidden">
+        <select {...props} className="invisible">
           {selectOptions}
         </select>
         {open && (
