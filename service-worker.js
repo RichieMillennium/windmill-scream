@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/windmill-scream/precache-manifest.594495d96d89181c0d63a2f8de2b0fb3.js"
+  "/windmill-scream/precache-manifest.bf312ec2301d8e2dba4198680de0d0c6.js"
 );
 
 self.addEventListener('message', (event) => {
