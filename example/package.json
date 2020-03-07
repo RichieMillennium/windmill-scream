@@ -1,7 +1,7 @@
 {
   "name": "windmill-scream-example",
   "homepage": "https://RichieMillennium.github.io/windmill-scream",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "private": true,
   "dependencies": {

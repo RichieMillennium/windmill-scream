@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import './styles/tailwind.css'
 
 import {
@@ -12,8 +12,7 @@ import {
   SelectInput,
   SelectOption,
   Checkbox,
-  RadioButton,
-  Grid
+  RadioButton
 } from 'windmill-scream'
 
 const CodeBlock = ({children}) => {
@@ -26,20 +25,6 @@ const CodeBlock = ({children}) => {
     </pre>
     </div>)
 }
-
-const columns = [
-  {
-    field: 'fld1',
-    title: 'Field 1',
-    lens: item => item.fld1
-  }
-];
-
-const items = [
-  {
-    fld1: 'Item 1 Field 1'
-  }
-];
 
 export const App = () => {
   const handleGithub = () => {
@@ -546,16 +531,6 @@ export const App = () => {
             </CodeBlock>
           </div>
         </div>
-        <div
-          className="md:flex h-12">
-          <h2
-            className="text-xl font-bold align-bottom">Grids</h2>
-        </div>
-        <div className="md:flex h-64">
-          <Grid color="indigo" columns={columns} items={items} className="" />
-        </div>
-        <div
-          className="md:flex h-12"/>
       </div>
     </Fragment>
   )
