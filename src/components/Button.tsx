@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import 'tailwindcss';
 import { Classy } from './Classy.model';
 import { Color, ALL_COLORS } from './Color.model';
 

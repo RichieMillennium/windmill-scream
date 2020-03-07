@@ -12,7 +12,8 @@ import {
   SelectInput,
   SelectOption,
   Checkbox,
-  RadioButton
+  RadioButton,
+  Grid
 } from 'windmill-scream'
 
 const CodeBlock = ({children}) => {
@@ -26,8 +27,21 @@ const CodeBlock = ({children}) => {
     </div>)
 }
 
+const columns = [
+  {
+    field: 'fld1',
+    title: 'Field 1',
+    lens: item => item.fld1
+  }
+];
+
+const items = [
+  {
+    fld1: 'Item 1 Field 1'
+  }
+];
+
 export const App = () => {
-  const [val, setVal] = useState('Four');
   const handleGithub = () => {
     window.open('https://github.com/RichieMillennium/windmill-scream', '_blank')
   }
@@ -531,6 +545,14 @@ export const App = () => {
               <br/>
             </CodeBlock>
           </div>
+        </div>
+        <div
+          className="md:flex h-12">
+          <h2
+            className="text-xl font-bold align-bottom">Grids</h2>
+        </div>
+        <div className="md:flex h-64">
+          <Grid color="indigo" columns={columns} items={items} className="" />
         </div>
         <div
           className="md:flex h-12"/>
