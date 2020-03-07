@@ -1,5 +1,4 @@
 import * as React from 'react';
-import 'tailwindcss';
 
 import { Classy } from './Classy.model';
 import { Color } from './Color.model';
@@ -28,6 +27,7 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
 }) => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState(props.value || props.defaultValue);
+  const firstOptionRef = React.useRef<HTMLAnchorElement | null>(null);
   const currentValue: any = props.value || props.defaultValue;
   React.useEffect(() => {
     if (currentValue !== value) {
@@ -36,15 +36,18 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
   }, [currentValue]);
 
   const toggleOpen = () => {
+    firstOptionRef.current = null;
     setOpen(wasOpen => !wasOpen);
   };
 
   const handleClose = () => {
+    firstOptionRef.current = null;
     setOpen(false);
     return undefined;
   };
 
   const handleSelect = (newValue?: string) => () => {
+    firstOptionRef.current = null;
     setValue(newValue);
     setOpen(false);
     const event = new CustomEvent('DropDown change', { detail: newValue });
@@ -103,7 +106,9 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
           >
             {!props.required && value !== undefined && (
               <a
-                className={`block p-2 cursor-pointer text-sm hover:bg-${color}-500 hover:text-white italic`}
+                href="#"
+                tabIndex={9998}
+                className={`wms-drop-down-option block p-2 cursor-pointer text-sm hover:bg-${color}-500 hover:text-white italic`}
                 onClick={handleSelect(undefined)}
               >
                 &lt;clear value&gt;
@@ -111,7 +116,15 @@ export const DropDown: React.FunctionComponent<IDropDown> = ({
             )}
             {React.Children.map(children, (reactChild: React.ReactElement) => (
               <a
-                className={`block p-2 cursor-pointer text-sm hover:bg-${color}-500 hover:text-white ${
+                ref={el => {
+                  if (!firstOptionRef.current && el) {
+                    firstOptionRef.current = el;
+                    el.focus();
+                  }
+                }}
+                href="#"
+                tabIndex={9999}
+                className={`wms-drop-down-option block p-2 cursor-pointer text-sm hover:bg-${color}-500 hover:text-white ${
                   getOptionValue(reactChild) === value ? 'font-bold' : ''
                 }`}
                 onClick={handleSelect(getOptionValue(reactChild))}

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import './styles/tailwind.css'
 
 import {
@@ -27,7 +27,6 @@ const CodeBlock = ({children}) => {
 }
 
 export const App = () => {
-  const [val, setVal] = useState('Four');
   const handleGithub = () => {
     window.open('https://github.com/RichieMillennium/windmill-scream', '_blank')
   }
@@ -532,8 +531,6 @@ export const App = () => {
             </CodeBlock>
           </div>
         </div>
-        <div
-          className="md:flex h-12"/>
       </div>
     </Fragment>
   )
